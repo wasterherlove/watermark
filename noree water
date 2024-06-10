@@ -1,0 +1,146 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local Watermark = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+local Logo = Instance.new("Frame")
+local Outline = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+local Avatar = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local Glow_Around = Instance.new("ImageLabel")
+
+-- Properties
+
+Watermark.Name = "Watermark"
+Watermark.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Watermark.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = Watermark
+Main.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Main.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.427838504, 0, 0.0440829843, 0)
+Main.Size = UDim2.new(0, 340, 0, 85)
+Main.ZIndex = 59
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = Main
+DropShadowHolder.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+DropShadowHolder.BackgroundTransparency = 1
+DropShadowHolder.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 21
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+DropShadow.BackgroundTransparency = 1
+DropShadow.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 21
+DropShadow.Image = "rbxassetid://6015897843"
+DropShadow.ImageColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+DropShadow.ImageTransparency = 0.5
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+Logo.Name = "Logo"
+Logo.Parent = Main
+Logo.BackgroundColor3 = Color3.new(0.0431373, 0.0431373, 0.0431373)
+Logo.BorderColor3 = Color3.new(0, 0, 0)
+Logo.BorderSizePixel = 0
+Logo.Size = UDim2.new(0, 340, 0, 25)
+Logo.ZIndex = 26
+
+Outline.Name = "Outline"
+Outline.Parent = Logo
+Outline.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Outline.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Outline.BorderSizePixel = 0
+Outline.Position = UDim2.new(0, 0, 1, 0)
+Outline.Size = UDim2.new(0, 339, 0, -3)
+
+Text.Name = "Text"
+Text.Parent = Logo
+Text.BackgroundColor3 = Color3.new(1, 1, 1)
+Text.BackgroundTransparency = 1
+Text.BorderColor3 = Color3.new(0, 0, 0)
+Text.BorderSizePixel = 0
+Text.Size = UDim2.new(0, 340, 0, 22)
+Text.Font = Enum.Font.SourceSans
+Text.Text = "serotonin.<font color=\"rgb(107, 100, 100)\">prod</font>"
+Text.TextColor3 = Color3.new(0.470588, 0.470588, 0.470588)
+Text.TextSize = 16
+Text.TextWrapped = true
+
+Avatar.Name = "Avatar"
+Avatar.Parent = Main
+Avatar.BackgroundColor3 = Color3.new(1, 1, 1)
+Avatar.BackgroundTransparency = 1
+Avatar.BorderColor3 = Color3.new(0, 0, 0)
+Avatar.BorderSizePixel = 0
+Avatar.Position = UDim2.new(0.0200000759, 0, 0.360000074, 0)
+Avatar.Size = UDim2.new(0, 48, 0, 48)
+Avatar.ZIndex = 27
+Avatar.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.161175892, 0, 0.294117659, 0)
+TextLabel.Size = UDim2.new(0, 282, 0, 60)
+TextLabel.ZIndex = 27
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Version | Beta  | Liftime"
+TextLabel.TextColor3 = Color3.new(0.560784, 0.560784, 0.560784)
+TextLabel.TextSize = 15
+TextLabel.TextWrapped = true
+
+Glow_Around.Name = "Glow_Around"
+Glow_Around.Parent = Watermark
+Glow_Around.BackgroundColor3 = Color3.new(1, 1, 1)
+Glow_Around.BackgroundTransparency = 1
+Glow_Around.BorderColor3 = Color3.new(0, 0, 0)
+Glow_Around.BorderSizePixel = 0
+Glow_Around.Position = UDim2.new(0.41471836, 0, 0.0358660258, 0)
+Glow_Around.Size = UDim2.new(0, 381, 0, 91)
+Glow_Around.ZIndex = 0
+Glow_Around.Image = "http://www.roblox.com/asset/?id=4996891970"
+Glow_Around.ImageColor3 = Color3.new(0.898039, 0.843137, 0.843137)
+
+-- Scripts
+
+local function HKCQS_fake_script() -- Avatar.LocalScript 
+	local script = Instance.new('LocalScript', Avatar)
+
+	task.wait()
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local PLACEHOLDER_IMAGE = "rbxassetid://0"
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size48x48
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	local imageLabel = script.Parent
+	imageLabel.Image = (isReady and content) or PLACEHOLDER_IMAGE
+	
+end
+coroutine.wrap(HKCQS_fake_script)()
